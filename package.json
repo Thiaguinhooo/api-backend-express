@@ -14,5 +14,8 @@
     "mysql"
   ],
   "author": "Pablo Henrique Medeiros Pires",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
