@@ -37,4 +37,6 @@ node - ambiente ou runtime que executa o js nos terminais,servidor,localhost etc
     Post:enviar dados
     Put:editar dados da api
     Patch:editar parcialmente da api
-    
+
+- Como mudar o formata de importação / exportação de require para import
+(Adicionar no package.json a propriedade type: "module")
