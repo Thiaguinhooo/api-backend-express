@@ -3,3 +3,38 @@
 - npm init // Cria o package.json para iniciar um projeto node
 - npm i nome_pacote // instala um pacote especifico
 - npm install ou npm i // instala todos os pacotes do package.json
+- npm run start,dev entre outros // para iniciar o server com o scripts de atalho pronto
+node - ambiente ou runtime que executa o js nos terminais,servidor,localhost etc
+
+# Comandos Git
+
+// configura usuário e o email do git na máquina-
+- git config --global user.name "Pablo Pires"
+- git config --global user.email "pablo.pire@aluno.ifsp.edu.br"
+
+- git init (inicia o git em uma pasta)
+- git remote add origin _url_do_github_ // vincula meu projeto local ao repositório do github
+
+# Tópicos Importantes
+
+- O que é framework
+    Conjunto de recursos ou ferramentas para resolver um problema
+
+- O que é JavaScript
+    Linguagem de progamação para a web
+
+- O que é Node.js
+    Ambiente ou runtime que executa o js nos terminais e também é cross
+
+- O que é o Express
+    Ele é um framework para desevolver o api do backend
+
+- Protocolo http
+    Protocolo que determina a regra de aquisiçoes e respostas da web
+
+- Método http (GET, POST, PUT, PATCH, DELETE)
+    Get:obter dados da api
+    Post:enviar dados
+    Put:editar dados da api
+    Patch:editar parcialmente da api
+    
