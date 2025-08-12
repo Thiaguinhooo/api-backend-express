@@ -1,10 +1,14 @@
 # Comandos
 
 - npm init // Cria o package.json para iniciar um projeto node
+
 - npm i nome_pacote // instala um pacote especifico
+
 - npm install ou npm i // instala todos os pacotes do package.json
+
 - npm run start,dev entre outros // para iniciar o server com o scripts de atalho pronto
-node - ambiente ou runtime que executa o js nos terminais,servidor,localhost etc
+
+- node - ambiente ou runtime que executa o js nos terminais,servidor,localhost etc
 
 # Comandos Git
 
@@ -40,3 +44,17 @@ node - ambiente ou runtime que executa o js nos terminais,servidor,localhost etc
 
 - Como mudar o formata de importação / exportação de require para import
 (Adicionar no package.json a propriedade type: "module")
+
+- --watch (parametro para rodar um js em modo dev, que permite rodar novamente o script quando algum arquivo é alterado)
+
+Sitaxe básica de uma rota da API
+
+app.delete('/user', (req, res) => {
+  res.json({message: 'Usuário deletado com sucesso'})
+})
+
+- método criar/inserir: delete 
+- Rota de endereço: /user
+- tipo de resposta: json
+
+
