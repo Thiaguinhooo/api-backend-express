@@ -1,34 +1,16 @@
 import express from 'express'
+import profileRouter from './router/profileRouter.js'
+import productRouter from './router/productRouter.js'
+import carRouter from './router/carRouter.js'
 
 const app = express()
 const port = 3333
 
-app.use(express.json()) //lendo as strings e voltando para 
+app.use(express.json()) // convete o Json que chegou na requisição em um objeto sj e vai salvalo
 
-
-app.post('/user', (req, res) => {
-  const dados = req.body
-  res.send({message: 'usuario criado com sucesso!',
-    profile: dados
-  })
-})
-
-app.get('/user', (req, res) => {
-  res.json({message: 'Usuário consultado com sucesso!'})
-})
-
-app.put('/user', (req, res) => {
-  const dados = req.body
-  res.json({message: 'Usuário editado com sucesso!'})
-})
-
-app.patch('/user', (req, res) => {
-  res.json({message: 'Usuário editado parcialmente com sucesso!'})
-})
-
-app.delete('/user', (req, res) => {
-  res.json({message: 'Usuário deletado com sucesso'})
-})
+app.use('/profile', profileRouter)
+app.use('/product', productRouter)
+app.use('/car', carRouter)
 
 app.listen(port, () => {
   console.log(`API Rodando em http://localhost:${port}`)
