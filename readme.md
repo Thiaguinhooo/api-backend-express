@@ -61,4 +61,5 @@ app.delete('/user', (req, res) => {
 
 - MODEL: Define as regras de negocios,
 
+- ORM: Object, relational, model ( Relacionamento de objeto do javascript com a base de dados), com facilidade alterar a base de dados e de escrever ou executar os comandos do banco de dados.
 

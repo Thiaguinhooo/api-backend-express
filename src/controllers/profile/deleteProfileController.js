@@ -1,3 +1,9 @@
-export function deleteProfileController(req, res) {
-  res.json({ message: 'Usuário deletado com sucesso' })
+import { remove } from '../../models/profileModel.js'
+
+export const deleteProfileController = async (req, res) => {
+  const id = req.params.id
+
+  const result = await remove(+id)
+
+  res.json({ message: 'Usuário com Id ${id} deletado com sucesso', profile: result })
 }

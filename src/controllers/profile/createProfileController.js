@@ -1,7 +1,12 @@
-export function createProfileController(req, res) {
-  const dados = req.body
-  res.json({
+import { create } from '../../profileModel.js' 
+
+export const createProfileController = async (req, res) => {
+  const profile = req.body
+
+  const result = await create(profile)
+
+res.json({
     message: 'Usuário criado com sucesso!',
-    profile: dados
-  })
+    profile: result
+})
 }

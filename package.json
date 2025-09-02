@@ -6,7 +6,7 @@
   "type":"module",
   "scripts": {
     "start": "node src/server.js",
-    "dev" : "node --watch src/server.js"
+    "dev": "node --watch src/server.js"
   },
   "keywords": [
     "node",
@@ -15,7 +15,7 @@
     "zod",
     "mysql"
   ],
-  "author": "Pablo Henrique Medeiros Pires",
+  "author": "Renan Cavichi",
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0"
