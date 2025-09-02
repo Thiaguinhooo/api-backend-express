@@ -57,4 +57,8 @@ app.delete('/user', (req, res) => {
 - Rota de endereço: /user
 - tipo de resposta: json
 
+- MVC= M:MODEL V:VIEW C:CONTROL
+
+- MODEL: Define as regras de negocios,
+
 
